@@ -22,5 +22,8 @@ export default defineNuxtConfig({
     ],
   },
   css: ['../src/app/fonts/fonts.css', '../src/app/styles/global.css'],
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n'],
+  i18n: {
+    // Module Options
+  },
 })
