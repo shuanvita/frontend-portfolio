@@ -1,0 +1,7 @@
+@font-face {
+  font-family: 'Fira Code';
+  src: local('Fira Code'), url('./FiraCode-Variable.woff2') format('woff2 supports variations'),
+    url(./FiraCode-Variable.woff2) format('woff2-variations');
+  font-weight: 300 400 450 700;
+  font-display: swap;
+}

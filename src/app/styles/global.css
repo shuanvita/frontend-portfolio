@@ -1,1 +1,11 @@
 @import 'tailwindcss';
+
+@layer base {
+  :root {
+    --default-font-family: 'Fira Code', 'sans-serif';
+  }
+}
+
+.container {
+  @apply max-w-[1782px] mx-auto px-5 2xl:px-0;
+}
