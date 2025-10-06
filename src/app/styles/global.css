@@ -2,8 +2,41 @@
 
 @layer base {
   :root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     --default-font-family: 'Fira Code', 'sans-serif';
   }
+}
+
+@theme {
+  --color-primary-1: #01080e;
+  --color-primary-2: #011627;
+  --color-primary-3: #011221;
+
+  --color-secondary-1: #607b96;
+  --color-secondary-2: #3c9d93;
+  --color-secondary-3: #4d5bce;
+  --color-secondary-4: #ffffff;
+
+  --color-accent-1: #fea55f;
+  --color-accent-2: #43d9ad;
+  --color-accent-3: #e99287;
+  --color-accent-4: #c98bdf;
+
+  --color-line: #1e2d3d;
+
+  --color-card: #272e37;
+  --color-card-hover: #3a434f;
+  --color-placeholder: #3f4958;
+  --color-gradient-button: linear-gradient(91deg, rgba(144, 217, 224, 0.9) 0.2%, rgba(84, 96, 230, 0.9) 100%);
+  --color-gradient-button-hover: linear-gradient(256deg, rgba(144, 217, 224, 0.9) 9.04%, rgba(84, 96, 230, 0.9) 92.2%);
+  --default-font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #010c15;
 }
 
 .container {

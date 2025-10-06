@@ -1,3 +1,3 @@
 <script setup lang="ts"></script>
 
-<template>Home</template>
+<template><div class="text-card">Home</div></template>
