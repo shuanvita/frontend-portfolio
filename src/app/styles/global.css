@@ -29,9 +29,9 @@
 }
 
 body {
-  background-color: #010c15;
-  color: #607b96;
   font-size: 18px;
+  color: #607b96;
+  background-color: #010c15;
 }
 
 .container {
