@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
+  future: {
+    compatibilityVersion: 4,
+  },
   devtools: { enabled: true },
   alias: {
     '@': '../src',
@@ -8,9 +11,6 @@ export default defineNuxtConfig({
   dir: {
     pages: './src/app/routes',
     layouts: './src/app/layouts',
-  },
-  future: {
-    compatibilityVersion: 4,
   },
   components: {
     dirs: [
@@ -24,6 +24,11 @@ export default defineNuxtConfig({
   css: ['../src/app/fonts/fonts.css', '../src/app/styles/global.css'],
   modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxtjs/i18n'],
   i18n: {
-    // Module Options
+    strategy: 'prefix',
+    defaultLocale: 'en',
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'ru', name: 'Russian', file: 'ru.json' },
+    ],
   },
 })
