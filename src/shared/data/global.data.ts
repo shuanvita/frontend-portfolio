@@ -1,39 +1,27 @@
-export const globalData = {
-  logo: {
-    name: 'logo',
-    href: '/',
-  },
+import type { IGlobalData } from './types/global.type'
+
+export const globalData: IGlobalData = {
   header: {
+    logo: {
+      name: 'micheal-weaver',
+      to: '/',
+    },
     navigation: [
       {
-        text: 'Magazine',
-        href: '/magazine',
+        text: '_hello',
+        to: '/',
       },
       {
-        text: 'Authors',
-        href: '/authors',
+        text: '_about-me',
+        to: '/about',
       },
       {
-        text: 'Podcast',
-        href: '/podcast',
-      },
-    ],
-    social: [
-      {
-        icon: 'instagram',
-        href: '#',
+        text: '_projects',
+        to: '/projects',
       },
       {
-        icon: 'twitter',
-        href: '#',
-      },
-      {
-        icon: 'youtube',
-        href: '#',
-      },
-      {
-        icon: 'rss',
-        href: '#',
+        text: '_contact-me',
+        to: '/contacts',
       },
     ],
   },
