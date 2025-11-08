@@ -2,6 +2,10 @@
 
 <template>
   <div>
-    <RouterView />
+    <header>Header</header>
+    <main>
+      <RouterView />
+    </main>
+    <footer>Footer</footer>
   </div>
 </template>
