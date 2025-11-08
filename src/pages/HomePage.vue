@@ -1,11 +1,7 @@
-<script lang="ts" setup>
-import VHeading from '../shared/ui/VHeading/VHeading.vue'
-import VText from '../shared/ui/VText/VText.vue'
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div>
-    <v-heading>Heading on HomePage</v-heading>
-    <v-text>Text on HomePage</v-text>
+    <h1 class="title-h1">Title H1</h1>
   </div>
 </template>

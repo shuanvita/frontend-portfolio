@@ -1,1 +1,16 @@
 @import 'tailwindcss';
+@import './typography.css';
+@import '../fonts/fonts.css';
+
+@layer base {
+  :root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --default-font-family: 'Fira Code', 'sans-serif';
+  }
+}
+
+body {
+}

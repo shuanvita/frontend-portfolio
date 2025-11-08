@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Fira Code';
+  src:
+    local('Fira-Code-Variable'),
+    url('./Fira-Code-Variable.woff2') format('woff2 supports variations'),
+    url('./Fira-Code-Variable.woff2') format('woff2-variations');
+  font-display: swap;
+}
