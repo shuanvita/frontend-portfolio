@@ -3,5 +3,7 @@ import LayoutDefault from '../layouts/LayoutDefault.vue'
 </script>
 
 <template>
-  <div><LayoutDefault>Main</LayoutDefault></div>
+  <div>
+    <LayoutDefault />
+  </div>
 </template>

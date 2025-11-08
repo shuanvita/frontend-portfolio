@@ -2,6 +2,8 @@
 
 <template>
   <header>Header</header>
-  <main><slot /></main>
+  <main>
+    <RouterView />
+  </main>
   <footer>Footer</footer>
 </template>
