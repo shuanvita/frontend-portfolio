@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
-    "lint": "eslint ./src --fix --cache",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix --cache",
     "format": "prettier --write src/",
     "lint-fsd": "npx steiger ./src",
     "prepare": "husky"
