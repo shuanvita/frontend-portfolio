@@ -2,11 +2,6 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 export const router = createRouter({
   routes: [
-    // {
-    //   path: '/:pathMatch(.*)*',
-    //   name: 'not-found',
-    //   component: () => import('./views/NotFoundView.vue'),
-    // },
     {
       name: 'home',
       path: '/',
