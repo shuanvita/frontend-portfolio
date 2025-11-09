@@ -17,5 +17,9 @@
 }
 
 body {
-  font-size: 18px;
+  @apply bg-slate-950 p-[70px] text-lg/normal text-slate-50;
+}
+
+.container {
+  @apply mx-auto max-w-[1780px] px-5 2xl:px-0;
 }

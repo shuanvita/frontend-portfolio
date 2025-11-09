@@ -1,8 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { TheHeader } from '@/widgets/TheHeader'
+</script>
 
 <template>
-  <div>
-    <header>Header</header>
+  <div class="rounded-lg border border-slate-700 bg-slate-900">
+    <TheHeader />
     <main>
       <RouterView />
     </main>
