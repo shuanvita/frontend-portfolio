@@ -1,5 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div></div>
+  <div class="mt-10">
+    <h1>About Page</h1>
+  </div>
 </template>
