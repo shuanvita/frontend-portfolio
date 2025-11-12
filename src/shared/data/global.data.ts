@@ -22,5 +22,6 @@ export const globalData = {
         to: '/contacts',
       },
     ],
+    mobileHint: '# navigate:',
   },
 }

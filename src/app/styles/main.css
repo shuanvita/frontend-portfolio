@@ -17,7 +17,7 @@
 }
 
 body {
-  @apply bg-slate-950 py-[70px] pr-[62px] pl-[63px] text-lg/normal text-slate-50;
+  @apply bg-slate-950 p-[15px] text-lg/normal text-slate-50 2xl:py-[70px] 2xl:pr-[62px] 2xl:pl-[63px];
 }
 
 .container {
