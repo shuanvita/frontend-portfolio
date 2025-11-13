@@ -42,7 +42,7 @@ router.afterEach(() => {
   </header>
   <div
     v-if="isMenuOpen"
-    class="text-step-2 fixed inset-x-4 top-0 z-50 flex min-h-[calc(100vh-140px)] flex-col overflow-y-auto rounded-b-lg border border-slate-700 bg-slate-900 text-slate-50"
+    class="text-step-2 fixed inset-x-4 top-[72px] z-50 flex flex-col overflow-y-auto rounded-b-lg border-slate-700 bg-slate-900 text-slate-50"
   >
     <div class="border-b border-slate-700 pt-[23px] pb-[9px] pl-6 text-slate-400">
       {{ globalData.header.mobileHint }}
