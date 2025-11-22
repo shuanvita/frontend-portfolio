@@ -4,7 +4,7 @@ import { TheHeader } from '@/widgets/TheHeader'
 
 <template>
   <div
-    class="min-h-[calc(100vh-30px)] rounded-lg border border-slate-700 bg-slate-900 xl:min-h-full"
+    class="grid min-h-[calc(100vh-30px)] grid-rows-[auto_1fr_auto] rounded-lg border border-slate-700 bg-slate-900 xl:min-h-full"
   >
     <TheHeader />
     <main>
