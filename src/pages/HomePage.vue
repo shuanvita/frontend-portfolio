@@ -4,21 +4,25 @@ import { homeData } from '@/shared/data'
 
 <template>
   <div
-    class="relative z-10 mx-auto flex h-full max-w-[1210px] items-center gap-[146px] px-[24px] pb-[28px] xl:px-0 xl:pb-0"
+    class="relative z-10 mx-auto flex h-full max-w-[1210px] items-center gap-[146px] px-6 pb-7 xl:px-0 xl:pb-0"
   >
-    <div class="relative z-10 text-slate-400">
-      <div class="text-step-3 mb-[3px]">{{ homeData.overTitle }}</div>
-      <h1 class="title-h2 xl:title-h1 mb-2 text-slate-50">{{ homeData.title }}</h1>
-      <h2 class="title-h6 xl:title-h4 mb-[75px] text-indigo-500">{{ homeData.subtitle }}</h2>
+    <div class="z-10 text-slate-400">
+      <div class="mb-[3px] text-lg/normal">{{ homeData.overTitle }}</div>
+      <h1 class="mb-2 text-[48px]/[1.2] text-slate-50 xl:text-[60px]/[1.1]">
+        {{ homeData.title }}
+      </h1>
+      <h2 class="mb-[75px] text-xl/normal text-indigo-500 xl:text-[30px]/[1.4]">
+        {{ homeData.subtitle }}
+      </h2>
       <div
-        class="text-step-1 xl:text-step-2 mb-[10px] xl:mb-2"
+        class="mb-2.5 text-[14px]/[1.4] xl:mb-2 xl:text-base/normal"
         v-for="(item, idx) in homeData.descriptions"
         :key="`home-description-${idx}`"
       >
         {{ item }}
       </div>
       <!-- TODO: сделать компонент с возможностью стилизовать текст из данных {tagStart} - {tagEnd} -->
-      <div class="text-step-1 xl:text-step-2 text-slate-50">
+      <div class="text-[14px]/[1.4] text-slate-50 xl:text-base/normal">
         <span class="text-indigo-500">const</span> <span class="text-teal-400">githubLink</span> =
         <router-link
           class="border-b border-rose-300 text-rose-300 hover:border-b-0 hover:text-rose-200"
@@ -34,7 +38,7 @@ import { homeData } from '@/shared/data'
       alt=""
     />
     <img
-      class="absolute -top-[30px] right-[0px] z-0 xl:hidden"
+      class="absolute -top-[30px] right-0 z-0 xl:hidden"
       src="/images/home-blurs-mobile.png"
       alt=""
     />
