@@ -33,7 +33,7 @@ import { homeData } from '@/shared/data'
     </div>
     <img class="z-10 hidden xl:block" src="/images/code-snippets.png" alt="code-snippets" />
     <img
-      class="absolute top-[70px] right-[70px] z-0 hidden xl:block"
+      class="absolute top-[0px] -right-[285px] z-0 hidden xl:block"
       src="/images/home-blurs.png"
       alt=""
     />
