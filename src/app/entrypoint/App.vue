@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { TheHeader } from '@/widgets/TheHeader'
+import { TheFooter } from '@/widgets/TheFooter'
 </script>
 
 <template>
@@ -10,6 +11,6 @@ import { TheHeader } from '@/widgets/TheHeader'
     <main>
       <RouterView />
     </main>
-    <footer>Footer</footer>
+    <TheFooter />
   </div>
 </template>

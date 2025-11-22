@@ -32,7 +32,7 @@ import { homeData } from '@/shared/data'
       </div>
     </div>
     <img class="z-10 hidden xl:block" src="/images/code-snippets.png" alt="code-snippets" />
-    <img
+    <!-- <img
       class="absolute top-[0px] -right-[285px] z-0 hidden xl:block"
       src="/images/home-blurs.png"
       alt=""
@@ -41,6 +41,6 @@ import { homeData } from '@/shared/data'
       class="absolute -top-[30px] right-0 z-0 xl:hidden"
       src="/images/home-blurs-mobile.png"
       alt=""
-    />
+    /> -->
   </div>
 </template>

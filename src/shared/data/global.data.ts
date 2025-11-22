@@ -24,4 +24,21 @@ export const globalData = {
     ],
     mobileHint: '# navigate:',
   },
+  footer: {
+    text: 'find me in:',
+    socials: [
+      {
+        icon: 'x',
+        href: '/',
+      },
+      {
+        icon: 'linkedin',
+        href: '/',
+      },
+    ],
+    git: {
+      username: '@username',
+      href: 'https://github.com/shuanvita',
+    },
+  },
 }
