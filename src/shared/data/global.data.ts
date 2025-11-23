@@ -35,6 +35,10 @@ export const globalData = {
         icon: 'linkedin',
         href: '/',
       },
+      {
+        icon: 'git',
+        href: 'https://github.com/shuanvita',
+      },
     ],
     git: {
       username: '@username',

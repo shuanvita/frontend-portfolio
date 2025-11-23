@@ -6,7 +6,7 @@ import { homeData } from '@/shared/data'
   <div
     class="relative z-10 mx-auto flex h-full max-w-[1210px] items-center gap-[146px] px-6 pb-7 xl:px-0 xl:pb-0"
   >
-    <div class="z-10 text-slate-400">
+    <div class="z-10 pt-[29px] text-slate-400 xl:pt-0">
       <div class="mb-[3px] text-lg/normal">{{ homeData.overTitle }}</div>
       <h1 class="mb-2 text-[48px]/[1.2] text-slate-50 xl:text-[60px]/[1.1]">
         {{ homeData.title }}
@@ -32,15 +32,11 @@ import { homeData } from '@/shared/data'
       </div>
     </div>
     <img class="z-10 hidden xl:block" src="/images/code-snippets.png" alt="code-snippets" />
-    <!-- <img
-      class="absolute top-[0px] -right-[285px] z-0 hidden xl:block"
+    <img
+      class="absolute top-0 -right-[285px] z-0 hidden xl:block"
       src="/images/home-blurs.png"
       alt=""
     />
-    <img
-      class="absolute -top-[30px] right-0 z-0 xl:hidden"
-      src="/images/home-blurs-mobile.png"
-      alt=""
-    /> -->
+    <img class="absolute top-0 right-0 z-0 xl:hidden" src="/images/home-blurs-mobile.png" alt="" />
   </div>
 </template>
