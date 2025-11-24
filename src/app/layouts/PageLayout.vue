@@ -6,7 +6,7 @@
       <slot name="aside" />
     </aside>
     <main>
-      <div class="h-[48px] border-b border-slate-700 p-3">
+      <div class="h-12 border-b border-slate-700 p-3">
         <slot name="topPanel" />
       </div>
       <slot />
