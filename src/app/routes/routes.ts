@@ -12,6 +12,11 @@ export const router = createRouter({
       path: '/about',
       component: () => import('@/pages/AboutPage.vue'),
     },
+    {
+      name: 'contacts',
+      path: '/contacts',
+      component: () => import('@/pages/ContactsPage.vue'),
+    },
   ],
   history: createWebHistory(),
 })
