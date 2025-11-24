@@ -3,7 +3,7 @@ import { homeData } from '@/shared/data'
 </script>
 
 <template>
-  <div
+  <main
     class="relative z-10 mx-auto flex h-full max-w-[1210px] items-center gap-[146px] px-6 pb-7 xl:px-0 xl:pb-0"
   >
     <div class="z-10 pt-[29px] text-slate-400 xl:pt-0">
@@ -38,5 +38,5 @@ import { homeData } from '@/shared/data'
       alt=""
     />
     <img class="absolute top-0 right-0 z-0 xl:hidden" src="/images/home-blurs-mobile.png" alt="" />
-  </div>
+  </main>
 </template>
