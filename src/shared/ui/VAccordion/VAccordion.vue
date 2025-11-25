@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
+const props = defineProps({
+  title: {
+    type: String,
+    default: 'Title',
+  },
+})
+
 const isOpen = ref(false)
 
 const toggle = () => {
@@ -21,7 +28,7 @@ const toggle = () => {
         size="16"
         :class="{ '-rotate-90': !isOpen }"
       />
-      <slot name="header" />
+      <span>{{ props.title }}</span>
     </div>
     <transition
       enter-active-class="transition-all duration-200 ease-out"
@@ -31,8 +38,8 @@ const toggle = () => {
       leave-from-class="max-h-screen opacity-100"
       leave-to-class="max-h-0 opacity-0"
     >
-      <div class="px-[23px] py-3" v-show="isOpen">
-        <slot name="content"></slot>
+      <div class="px-[23px] pt-3 pb-[9px]" v-show="isOpen">
+        <slot />
       </div>
     </transition>
   </div>

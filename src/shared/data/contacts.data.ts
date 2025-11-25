@@ -1,7 +1,38 @@
 export const contactsData = {
-  overTitle: 'Hi all. I am',
-  title: 'Micheal Weaver',
-  subtitle: '> Front-end developer',
-  descriptions: ['// complete the game to continue', '// find my profile on Github:'],
-  gitHubLink: 'const githubLink = “https://github.com/example/url”',
+  aside: {
+    contacts: [
+      {
+        icon: 'solid/email',
+        text: 'user@gmail.com',
+        href: 'mailto:user@gmail.com',
+      },
+      {
+        icon: 'solid/phone',
+        text: '+3598246359',
+        href: 'tel:+3598246359',
+      },
+    ],
+    findMe: [
+      {
+        icon: 'outline/link',
+        text: 'YouTube',
+        href: 'https://github.com/MichaelWeaver',
+      },
+      {
+        icon: 'outline/link',
+        text: 'dev.to',
+        href: 'https://github.com/MichaelWeaver',
+      },
+      {
+        icon: 'outline/link',
+        text: 'Instagram',
+        href: 'https://github.com/MichaelWeaver',
+      },
+      {
+        icon: 'outline/link',
+        text: 'Twich',
+        href: 'https://github.com/MichaelWeaver',
+      },
+    ],
+  },
 }

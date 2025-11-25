@@ -1,57 +1,34 @@
 <script lang="ts" setup>
 import PageLayout from '@/app/layouts/PageLayout.vue'
+import { contactsData } from '@/shared/data'
 </script>
 
 <template>
   <PageLayout>
     <template #aside>
-      <v-accordion>
-        <template #header>contacts</template>
-        <template #content>
+      <v-accordion title="contacts">
+        <div class="flex flex-col gap-2">
           <v-link
-            class="mb-2 text-slate-400 duration-200 hover:text-slate-50"
-            to="/about"
-            iconBefore="solid/email"
-            >user@gmail.com</v-link
-          >
-          <v-link
+            v-for="(item, idx) in contactsData.aside.contacts"
+            :key="`contacts-item-${idx}`"
             class="text-slate-400 duration-200 hover:text-slate-50"
-            to="/about"
-            iconBefore="solid/phone"
-            >+3598246359</v-link
+            :to="item.href"
+            :iconBefore="item.icon"
+            >{{ item.text }}</v-link
           >
-        </template>
+        </div>
       </v-accordion>
-      <v-accordion>
-        <template #header>find-me-also-in</template>
-        <template #content>
-          <div class="flex flex-col gap-1">
-            <v-link
-              class="text-slate-400 duration-200 hover:text-slate-50"
-              to="/about"
-              iconBefore="outline/link"
-              >YouTube</v-link
-            >
-            <v-link
-              class="text-slate-400 duration-200 hover:text-slate-50"
-              to="/about"
-              iconBefore="outline/link"
-              >dev.to</v-link
-            >
-            <v-link
-              class="text-slate-400 duration-200 hover:text-slate-50"
-              to="/about"
-              iconBefore="outline/link"
-              >Instagram</v-link
-            >
-            <v-link
-              class="text-slate-400 duration-200 hover:text-slate-50"
-              to="/about"
-              iconBefore="outline/link"
-              >Twich</v-link
-            >
-          </div>
-        </template>
+      <v-accordion title="find-me-also-in" class="border-t border-slate-700">
+        <div class="flex flex-col gap-2">
+          <v-link
+            v-for="(item, idx) in contactsData.aside.findMe"
+            :key="`find-me-item-${idx}`"
+            class="text-slate-400 duration-200 hover:text-slate-50"
+            :to="item.href"
+            :iconBefore="item.icon"
+            >{{ item.text }}</v-link
+          >
+        </div>
       </v-accordion>
     </template>
     <template #topPanel> </template>

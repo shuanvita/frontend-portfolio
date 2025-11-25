@@ -15,6 +15,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  iconSize: {
+    type: String,
+    default: '16',
+  },
   className: {
     type: String,
     default: '',
@@ -23,9 +27,9 @@ const props = defineProps({
 </script>
 
 <template>
-  <RouterLink :to="props.to" :class="['inline-flex items-center gap-3', props.className]">
-    <v-svg v-if="props.iconBefore" :name="props.iconBefore" size="16" />
+  <RouterLink :to="props.to" :class="['inline-flex items-center gap-2', props.className]">
+    <v-svg v-if="props.iconBefore" :name="props.iconBefore" :size="props.iconSize" />
     <slot />
-    <v-svg v-if="props.iconAfter" :name="props.iconAfter" size="16" />
+    <v-svg v-if="props.iconAfter" :name="props.iconAfter" :size="props.iconSize" />
   </RouterLink>
 </template>
