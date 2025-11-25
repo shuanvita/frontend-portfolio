@@ -14,7 +14,9 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Svg: typeof import('./src/shared/ui/VSvg/svg.vue')['default']
+    VAccordion: typeof import('./src/shared/ui/VAccordion/VAccordion.vue')['default']
     VButton: typeof import('./src/shared/ui/VButton/VButton.vue')['default']
+    VLink: typeof import('./src/shared/ui/VLink/VLink.vue')['default']
     VSvg: typeof import('./src/shared/ui/VSvg/VSvg.vue')['default']
   }
 }
