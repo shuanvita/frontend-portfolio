@@ -6,9 +6,13 @@ const props = defineProps({
     type: String,
     default: 'Title',
   },
+  fullSize: {
+    type: Boolean,
+    default: false,
+  },
 })
 
-const isOpen = ref(false)
+const isOpen = ref(true)
 
 const toggle = () => {
   isOpen.value = !isOpen.value
@@ -17,18 +21,23 @@ const toggle = () => {
 
 <template>
   <div class="text-base/normal">
-    <div
-      class="flex h-12 cursor-pointer items-center gap-3 border-b border-slate-700 px-[23px] duration-200 hover:text-slate-50"
-      :class="isOpen ? 'text-slate-50' : 'text-slate-400'"
-      @click="toggle"
-    >
-      <v-svg
-        class="transition-transform duration-200"
-        name="solid/arrow-down"
-        size="16"
-        :class="{ '-rotate-90': !isOpen }"
-      />
-      <span>{{ props.title }}</span>
+    <div :class="['max-h-12 border-b border-slate-700', isOpen ? 'border-b' : 'border-b-0']">
+      <div
+        :class="[
+          'h-12 cursor-pointer items-center gap-3 px-[23px] duration-200 hover:text-slate-50',
+          isOpen ? 'text-slate-50' : 'text-slate-400',
+          props.fullSize ? 'flex' : 'inline-flex',
+        ]"
+        @click="toggle"
+      >
+        <v-svg
+          class="transition-transform duration-200"
+          name="solid/arrow-down"
+          size="16"
+          :class="{ '-rotate-90': !isOpen }"
+        />
+        <span>{{ props.title }}</span>
+      </div>
     </div>
     <transition
       enter-active-class="transition-all duration-200 ease-out"
@@ -38,7 +47,7 @@ const toggle = () => {
       leave-from-class="max-h-screen opacity-100"
       leave-to-class="max-h-0 opacity-0"
     >
-      <div class="px-[23px] pt-3 pb-[9px]" v-show="isOpen">
+      <div class="px-[23px] pt-3 pb-[11px]" v-show="isOpen">
         <slot />
       </div>
     </transition>
