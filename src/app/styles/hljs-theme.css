@@ -1,0 +1,5 @@
+.hljs {
+  font-family: var(--default-font-family);
+  padding: 0 !important;
+  background: #0f172b;
+}

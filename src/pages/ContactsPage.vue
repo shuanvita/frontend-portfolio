@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import PageLayout from '@/app/layouts/PageLayout.vue'
 import { contactsData } from '@/shared/data'
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const formData = ref({
   name: '',
@@ -26,6 +26,27 @@ const classesTextarea = {
   label: 'flex mb-[7px] text-slate-400 text-[16px]/[1.5]',
   validation: 'text-red-500 mt-1 text-xs',
 }
+
+const codeString = computed(() => {
+  return `const button = document.querySelector('#sendBtn');
+const message = {
+ name: "${formData.value.name}",
+ email: "${formData.value.email}",
+ message: "${formData.value.message}",
+ date: "${new Date().toLocaleString('en-US', {
+   day: '2-digit',
+   month: '2-digit',
+   year: 'numeric',
+ })}"
+}
+
+button.addEventListener('click', () => {
+ form.send(message);
+})
+`
+})
+
+const codeLines = computed(() => codeString.value.split('\n'))
 </script>
 
 <template>
@@ -96,7 +117,15 @@ const classesTextarea = {
           </FormKit>
         </div>
       </div>
-      <div>Тут код при заполнении формы</div>
+
+      <div
+        class="flex gap-10 overflow-hidden rounded-lg bg-slate-900 pt-[13px] pl-[50px] text-slate-400"
+      >
+        <div class="flex flex-col">
+          <span v-for="(line, index) in codeLines" :key="index">{{ index + 1 }}</span>
+        </div>
+        <highlightjs language="javascript" :code="codeString" />
+      </div>
     </div>
   </PageLayout>
 </template>
