@@ -1,7 +1,7 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="grid grid-cols-[311px_1fr]">
+  <div class="grid xl:grid-cols-[311px_1fr]">
     <aside class="border-r border-slate-700">
       <slot name="aside" />
     </aside>

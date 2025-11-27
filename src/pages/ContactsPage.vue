@@ -29,6 +29,7 @@ const classesTextarea = {
 
 const codeString = computed(() => {
   return `const button = document.querySelector('#sendBtn');
+
 const message = {
  name: "${formData.value.name}",
  email: "${formData.value.email}",
@@ -75,7 +76,7 @@ const codeLines = computed(() => codeString.value.split('\n'))
         </div>
       </v-accordion>
     </template>
-    <div class="grid min-h-[calc(100%-48px)] grid-cols-[632px_1fr]">
+    <div class="grid min-h-[calc(100%-48px)] xl:grid-cols-[632px_1fr]">
       <div class="grid place-content-center border-r-2 border-slate-700">
         <div class="w-screen max-w-[372px] pt-[130px] pb-[239px]">
           <FormKit type="form" v-model="formData" :actions="false" v-slot="{ invalid }">
@@ -119,7 +120,7 @@ const codeLines = computed(() => codeString.value.split('\n'))
       </div>
 
       <div
-        class="flex gap-10 overflow-hidden rounded-lg bg-slate-900 pt-[13px] pl-[50px] text-slate-400"
+        class="flex gap-[29px] overflow-hidden rounded-lg bg-slate-900 pt-[13px] pl-[50px] text-slate-400"
       >
         <div class="flex flex-col">
           <span v-for="(line, index) in codeLines" :key="index">{{ index + 1 }}</span>
